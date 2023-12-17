@@ -2,6 +2,11 @@
 https://www.youtube.com/watch?v=tKdFrVzDLV4
 	- In Manifest.txt file : Main-Class: HelloWorld //Simple Program
 	OR
-	- Youtube link for Intellij and Gradle
+	- Youtube link for Intellij and Gradle 
+		-jar { //To Make JAR necessary in build.gradle file
+    manifest {
+        attributes('Main-Class' : 'org.example.Main')
+    }
+}
 
 2.  
