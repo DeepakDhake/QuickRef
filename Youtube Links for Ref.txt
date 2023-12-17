@@ -1,0 +1,7 @@
+1. Gradle Using Intellij Build Executable Jar File :-
+https://www.youtube.com/watch?v=tKdFrVzDLV4
+	- In Manifest.txt file : Main-Class: HelloWorld //Simple Program
+	OR
+	- Youtube link for Intellij and Gradle
+
+2.  
