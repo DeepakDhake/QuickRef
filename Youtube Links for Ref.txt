@@ -3,10 +3,19 @@ https://www.youtube.com/watch?v=tKdFrVzDLV4
 	- In Manifest.txt file : Main-Class: HelloWorld //Simple Program
 	OR
 	- Youtube link for Intellij and Gradle 
-		-jar { //To Make JAR necessary in build.gradle file
+-jar { //To Make JAR necessary in build.gradle file
     manifest {
         attributes('Main-Class' : 'org.example.Main')
     }
-}
+} 
 
-2.  
+2. To Persist and Update data in h2 database (application.properties file)
+spring.datasource.url=jdbc:h2:file:./TestDataBase
+  #jdbc:h2:mem:testdb --for temp purpose
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled=true
+spring.jpa.hibernate.ddl-auto=update
+spring.mvc.pathmatch.matching-strategy = ANT_PATH_MATCHER
